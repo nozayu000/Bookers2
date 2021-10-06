@@ -18,11 +18,14 @@
 @import "bootstrap";
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;;
- }
+
+
+
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;;
+//  }
 clearfix::after {
   content: "";
   display: block;
@@ -32,8 +35,14 @@ clearfix::after {
   color: #fff;
   font-size: 20px;
 }
-.body {
-  margin: 55px 10% 0px 8%;
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
 }
 .notice {
   color: green;
@@ -44,8 +53,63 @@ clearfix::after {
 .error-message {
   font-size: 12px;
   list-style: square;
-  margin-left: 60px;
+  margin-left: 20px;
 }
 .actions {
   margin-top: 5px;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+nav {
+    display: block;
+}
+.mt-5, .my-5 {
+    margin-top: 3rem !important;
+}
+.container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
+.pl-3, .px-3 {
+    padding-left: 1rem !important;
+}
+div.field, div.actions {
+    margin-bottom: 10px;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
 }

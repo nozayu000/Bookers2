@@ -14,6 +14,7 @@ class UsersController < ApplicationController
   end
 
   def edit
+    # dbから既存のものを取得
     @user = User.find(params[:id])
     if @user == current_user
         render "edit"
